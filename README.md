@@ -1,2 +1,3 @@
 # my-projects
- Folder with my projects.
+
+Repositório criado para armazenar todos os meus projetos.
