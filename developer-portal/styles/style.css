@@ -69,10 +69,6 @@ header {
     display: none;
 }
 
-header > nav {
-    background-color: white;
-}
-
 header > nav > a {
     padding: 10px;
     color: black;
@@ -105,6 +101,10 @@ header > nav > a {
 @media (max-width: 599px) {
     header {
         position: relative;
+    }
+
+    header > nav {
+        background-color: white;
     }
 
     #logo > a {
