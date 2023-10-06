@@ -36,6 +36,7 @@ function Navegation(GoTo) {
     const iHomeImg = window.document.querySelector('#home-img');
     const iAbout = window.document.querySelector('#about');
     const iRegister = window.document.querySelector('#register');
+    const iLogin = window.document.querySelector('#login');
 
     switch(GoTo) {
         case 'Home':
@@ -44,6 +45,7 @@ function Navegation(GoTo) {
             iHomeImg.style.display = 'flex';
             iAbout.style.display = 'none';
             iRegister.style.display = 'none';
+            iLogin.style.display = 'none';
             break
         case 'About':
             Menu();
@@ -51,14 +53,24 @@ function Navegation(GoTo) {
             iHomeImg.style.display = 'none';
             iAbout.style.display = 'flex';
             iRegister.style.display = 'none';
+            iLogin.style.display = 'none';
             break
         case 'Register':
-                Menu();
-                iHomeCont.style.display = 'none';
-                iHomeImg.style.display = 'none';
-                iAbout.style.display = 'none';
-                iRegister.style.display = 'block';
-                break
+            Menu();
+            iHomeCont.style.display = 'none';
+            iHomeImg.style.display = 'none';
+            iAbout.style.display = 'none';
+            iRegister.style.display = 'block';
+            iLogin.style.display = 'none';
+            break
+        case 'Login':
+            Menu();
+            iHomeCont.style.display = 'none';
+            iHomeImg.style.display = 'none';
+            iAbout.style.display = 'none';
+            iRegister.style.display = 'none';
+            iLogin.style.display = 'block';
+            break
     }
 }
 

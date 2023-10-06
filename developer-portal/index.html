@@ -26,7 +26,7 @@
             <a href="#home-content" onclick="Navegation('Home')">Home</a>
             <a href="#about" onclick="Navegation('About')">Sobre</a>
             <a href="#register" onclick="Navegation('Register')">Cadastro</a>
-            <a href="">Login</a>
+            <a href="#login" href="#register" onclick="Navegation('Login')">Login</a>
             <a href="">Meu Perfil</a>
         </nav>
     </header>
@@ -37,7 +37,7 @@
                 <h1>Developer Portal</h1>
                 <p>Olá, desenvolvedor(a), seja bem vindo(a) ao Developer Portal!</p>
                 <div>
-                    <div id="button-login">
+                    <div id="button-login" onclick="Navegation('Login')">
                         <p>Login</p>
                     </div>
                     <div id="button-cadastro" onclick="Navegation('Register')">
@@ -81,7 +81,7 @@
                         <div id="user-contact" class="style-form">
                             <div>
                                 <label for="iemail">E-mail</label>
-                                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required minlength="1">
+                                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com">
                             </div>
                             <div>
                                 <label for="itelephone">Telefone</label>
@@ -113,7 +113,33 @@
                             <div>Cadastro</div>
                             <button>Não vai aparecer</button>
                         </a>
-                        <p>Já tem uma conta? <a href="">Fazer Login</a></p>
+                        <p>Já tem uma conta? <a href="#login" onclick="Navegation('Login')">Fazer Login</a></p>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <section id="login">
+            <div>
+                <figure>
+                    <img src="images/developer-login.svg" alt="Página Login">
+                </figure>
+                <article>
+                    <h1>Fazer Login</h1>
+                    <form method="post" autocomplete="off">
+                        <div class="style-form-login">
+                            <label for="lemail">Email ou Telefone</label>
+                            <input type="email" name="lmail" id="lemail" placeholder="Digite seu E-mail" required>
+                        </div>
+                        <div class="style-form-login">
+                            <label for="lpassword">Senha</label>
+                            <input type="password" name="lpass" id="lpassword" placeholder="Digite sua senha" required>
+                        </div>
+                        <a href="" id="button-logar">
+                            <div>Entrar</div>
+                            <button>Não vai aparecer</button>
+                        </a>
+                        <p>Ainda não tem uma contas? <a href="#register" onclick="Navegation('Register')">Fazer Cadastro</a></p>
                     </form>
                 </article>
             </div>
