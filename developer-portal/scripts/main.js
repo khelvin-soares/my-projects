@@ -29,6 +29,8 @@ setInterval(() => {
             V = false
             IconMenu.innerHTML = 'menu';
             ShowMenu.style.display = 'none';
+        } else {
+            V=false;
         }
     }
 }, 200);
