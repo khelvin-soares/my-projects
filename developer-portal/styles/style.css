@@ -267,10 +267,15 @@ main {
         width: 200px;
         top: 100%;
         right: 0%;
+        height: 100vh;
         font-size: 16px;
+        border-radius: 0px 0px 0px 7px;
+        box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.282);
+        background-color: rgb(223, 198, 251);
     }
 
-    header > nav > a {
+    header > nav > p {
+        color: black;
         font-size: 16px;
     }
 
