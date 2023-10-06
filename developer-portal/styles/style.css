@@ -13,6 +13,8 @@
     Cor 3 - #96ADFF
     Cor 4 - #C698FF
     Cor 5 - #FE80FF
+
+    #FDE3A7D7
 */
 
 * {
@@ -230,6 +232,130 @@ main {
 #about > figure > img{
     width: 100%;
     max-width: 600px;
+}
+
+#register {
+    display: none;
+    margin: auto;
+}
+
+#register > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#register > div > figure {
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FDE3A7D7;
+}
+
+#register > div > figure > img {
+    width: 80%;
+}
+
+#register > div > article {
+    padding: 25px;
+    width: 465px;
+    background-color: white;
+}
+
+#register > div > article > h1 {
+    padding: 0px 0px 15px 0px;
+}
+
+.style-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 15px 0px;
+}
+
+.style-form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.style-form > div > label {
+    padding: 10px 0px;
+    font-weight: bolder;
+}
+
+#user-gender {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-gender > h1 {
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+#user-gender > div {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#user-gender input, #user-gender label {
+    cursor: pointer;
+}
+
+.style-form input {
+    border: none;
+    outline: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #0000001c;
+    transition-duration: 0.5s;
+}
+
+.style-form input:hover {
+    cursor: pointer;
+    outline: 1px solid #C698FF;
+    background-color: #eeeeee75;
+    transition-duration: 0.5s;
+}
+
+#register > div > article > form > button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin: 25px 0px 0px 0px;
+    background-color: var(--Cor3);
+}
+
+#register > div > article > form > button:hover {
+    cursor: pointer;
+}
+
+#register > div > article > form > p {
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+#register > div > article > form > p > a {
+    color: #5b87ff;
+    text-decoration: none;
+}
+
+@media (max-width: 999px) {
+    #register > div > figure {
+        display: none;
+    }
 }
 
 @media (max-width: 849px) {

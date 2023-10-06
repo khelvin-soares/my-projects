@@ -11,8 +11,8 @@
 <body>
     <header>
         <div id="logo">
-            <a href=""><img src="images/icon-dev.png" alt="Icon Developer"></a>
-            <a href="">
+            <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="prev"><img src="images/icon-dev.png" alt="Icon Developer"></a>
+            <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="prev">
                 <p>DEVELOPER PORTAL</p>
             </a>
         </div>
@@ -25,7 +25,7 @@
         <nav id="menu">
             <a href="#home-content" onclick="Navegation('Home')">Home</a>
             <a href="#about" onclick="Navegation('About')">Sobre</a>
-            <a href="">Cadastro</a>
+            <a href="#register" onclick="Navegation('Register')">Cadastro</a>
             <a href="">Login</a>
             <a href="">Meu Perfil</a>
         </nav>
@@ -58,6 +58,62 @@
             <figure>
                 <img src="images/icon-about.svg" alt="Página Sobre">
             </figure>
+        </section>
+
+        <section id="register">
+            <div>
+                <figure>
+                    <img src="images/developer-cadastro.svg" alt="Página Cadastro">
+                </figure>
+                <article>
+                    <h1>Casdastre-se</h1>
+                    <form method="post" autocomplete="off">
+                        <div id="user-name" class="style-form">
+                            <div>
+                                <label for="inome">Nome</label>
+                                <input type="text" name="nome" id="inome" placeholder="Digite o seu nome" required>
+                            </div>
+                            <div>
+                                <label for="isobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite o seu sobrenome" required>
+                            </div>
+                        </div>
+                        <div id="user-contact" class="style-form">
+                            <div>
+                                <label for="iemail">E-mail</label>
+                                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="itelephone">Telefone</label>
+                                <input type="tel" name="telephone" id="itelephone" placeholder="(xx) xxxxx-xxxx" required>
+                            </div>
+                        </div>
+                        <div id="user-password" class="style-form">
+                            <div>
+                                <label for="ipass">Senha</label>
+                                <input type="password" name="pass" id="ipass" placeholder="Digite uma senha" required>
+                            </div>
+                            <div>
+                                <label for="cpass">Confirme sua senha</label>
+                                <input type="password" name="pass" id="cpass" placeholder="Digite sua senha novamente" required>
+                            </div>
+                        </div>
+                        <div id="user-gender">
+                            <h1>Genero</h1>
+                            <div>
+                                <div>
+                                    <p><input type="radio" name="gender" id="igender-m" checked> <label for="igender-m">Masculino</label></p>
+                                </div>
+                                <div>
+                                    <p><input type="radio" name="gender" id="igender-f"> <label for="igender-f">Feminino</label></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button>Cadastrar</button>
+                        <p>Já tem uma conta? <a href="">Fazer Login</a></p>
+                    </form>
+                </article>
+            </div>
         </section>
     </main>
 

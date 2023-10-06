@@ -35,6 +35,7 @@ function Navegation(GoTo) {
     const iHomeCont = window.document.querySelector('#home-content');
     const iHomeImg = window.document.querySelector('#home-img');
     const iAbout = window.document.querySelector('#about');
+    const iRegister = window.document.querySelector('#register');
 
     switch(GoTo) {
         case 'Home':
@@ -42,13 +43,22 @@ function Navegation(GoTo) {
             iHomeCont.style.display = 'flex';
             iHomeImg.style.display = 'flex';
             iAbout.style.display = 'none';
+            iRegister.style.display = 'none';
             break
         case 'About':
             Menu();
             iHomeCont.style.display = 'none';
             iHomeImg.style.display = 'none';
             iAbout.style.display = 'flex';
+            iRegister.style.display = 'none';
             break
+        case 'Register':
+                Menu();
+                iHomeCont.style.display = 'none';
+                iHomeImg.style.display = 'none';
+                iAbout.style.display = 'none';
+                iRegister.style.display = 'block';
+                break
     }
 }
 
