@@ -97,7 +97,7 @@ header > nav > a:hover {
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     padding: 25px 15px;
     display: flex;
     flex-direction: row;
@@ -192,7 +192,44 @@ main {
 }
 
 #about {
+    width: 100%;
     display: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+#about > article {
+    max-width: 600px;
+    margin: auto;
+    color: white;
+    text-align: justify;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about > article > h1 {
+    padding: 10px;
+    font-size: 3em;
+    text-align: center;
+}
+
+#about > article > p {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+#about > figure {
+    display: flex;
+    justify-content: center;
+}
+
+#about > figure > img{
+    width: 100%;
+    max-width: 600px;
 }
 
 @media (max-width: 849px) {
@@ -214,6 +251,14 @@ main {
 
     #home-content > article > div {
         justify-content: center;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about > figure > img{
+        max-width: 400px;
     }
 }
 

@@ -47,7 +47,7 @@ function Navegation(GoTo) {
             Menu();
             iHomeCont.style.display = 'none';
             iHomeImg.style.display = 'none';
-            iAbout.style.display = 'block';
+            iAbout.style.display = 'flex';
             break
     }
 }
