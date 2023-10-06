@@ -1,4 +1,4 @@
-var MenuOpen = true;
+var MenuOpen = false;
 
 const ButtonMenu = window.document.querySelector('#button-menu');
 const ShowMenu = window.document.querySelector('#menu');
@@ -16,15 +16,17 @@ function Menu() {
     }
 }
 
+var V = true;
 setInterval(() => {
     var GetWidth = window.innerWidth;
     
-    if (GetWidth > 599) {
-        MenuOpen = false;
+    if (V == false && GetWidth > 599) {
+        V = true
         IconMenu.innerHTML = 'close';
         ShowMenu.style.display = 'flex';
     } else {
-        if (MenuOpen == false) {
+        if (V == true && GetWidth < 600) {
+            V = false
             IconMenu.innerHTML = 'menu';
             ShowMenu.style.display = 'none';
         }
