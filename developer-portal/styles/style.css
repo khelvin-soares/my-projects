@@ -46,7 +46,7 @@ header {
 }
 
 #logo {
-    width: 250px;
+    width: 210px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,13 +76,19 @@ header {
     display: none;
 }
 
-header > nav > a {
+header > nav > p {
     padding: 10px;
     color: white;
     text-align: center;
     border-radius: 5px;
     font-weight: bolder;
     text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+header > nav > p:hover {
+    padding: 13px;
+    cursor: pointer;
     transition-duration: 0.5s;
 }
 
@@ -110,7 +116,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: start;
 }
 
 #home-conteudo > h1 {
@@ -118,12 +124,13 @@ main {
     font-size: 2.5em;
     font-style: italic;
     font-family: var(--font-mod);
+    transition-duration: 0.5s;
 }
 
 #home-conteudo > article > div {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     align-items: end;
 }
 
@@ -132,8 +139,12 @@ main {
     font-size: 1.1em;
 }
 
-#button-login {
+#button-login, #button-cadastro {
     width: 170px;
+    transition-duration: 0.5s;
+}
+
+#button-login {
     margin: 10px;
     border-radius: 7px;
     background-color: white;
@@ -141,7 +152,6 @@ main {
 }
 
 #button-cadastro {
-    width: 170px;
     margin: 10px;
     border-radius: 7px;
     background-color: transparent;
@@ -150,6 +160,8 @@ main {
 
 #button-login:hover, #button-cadastro:hover {
     cursor: pointer;
+    padding: 2px;
+    transition-duration: 0.5s;
 }
 
 #button-login > p {
@@ -167,6 +179,28 @@ main {
     text-align: center;
     color: white;
     font-weight: bolder;
+}
+
+@media (max-width: 849px) {
+    main {
+        padding: 35px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #home-conteudo > h1 {
+        font-size: 2.4em;
+    }
+
+    #home-conteudo {
+        align-items: center;
+    }
+
+    #home-conteudo > article > div {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -238,5 +272,15 @@ main {
 
     header > nav > a {
         font-size: 16px;
+    }
+
+    #home-conteudo > h1 {
+        font-size: 2.2em;
+        transition-duration: 0.5s;
+    }
+
+    #button-login, #button-cadastro {
+        width: 140px;
+        transition-duration: 0.5s;
     }
 }
