@@ -458,6 +458,45 @@ button {
     transition-duration: 0.5s;
 }
 
+#not-found {
+    width: 100%;
+    display: none;
+}
+
+#not-found > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#not-found > article > figure > img {
+    max-width: 400px;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+#not-found > article > h1 {
+    padding: 25px;
+    color: white;
+    font-size: 2em;
+    transition-duration: 0.5s;
+}
+
+#not-found > article > p {
+    padding: 5px;
+    color: white;
+    max-width: 600px;
+    text-align: center;
+}
+
+#not-found > article > a {
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.624);
+}
+
 @media (max-width: 999px) {
     #register > div > figure {
         display: none;
@@ -606,5 +645,16 @@ button {
 
     .style-form-login {
         flex-direction: column;
+    }
+    
+    #not-found > article > figure > img {
+        max-width: 300px;
+        transition-duration: 0.5s;
+    }
+    
+    #not-found > article > h1 {
+        padding: 25px;
+        font-size: 1.5em;
+        transition-duration: 0.5s;
     }
 }

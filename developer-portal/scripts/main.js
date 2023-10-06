@@ -17,53 +17,76 @@ function Menu() {
 }
 
 function Navegation(GoTo) {
+    const iAreaHeader = window.document.querySelector('#area-header');
     const iHomeCont = window.document.querySelector('#home-content');
-    const iHomeImg = window.document.querySelector('#home-img');
     const iAbout = window.document.querySelector('#about');
     const iRegister = window.document.querySelector('#register');
     const iLogin = window.document.querySelector('#login');
+    const iNotFound = window.document.querySelector('#not-found');
 
     switch(GoTo) {
         case 'Home':
-            Menu();
+            iAreaHeader.style.display = 'flex';
             iHomeCont.style.display = 'flex';
-            iHomeImg.style.display = 'flex';
             iAbout.style.display = 'none';
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
+            iNotFound.style.display = 'none';
 
             MenuOpen = true;
             Menu();
             break
         case 'About':
-            Menu();
+            iAreaHeader.style.display = 'flex';
             iHomeCont.style.display = 'none';
-            iHomeImg.style.display = 'none';
             iAbout.style.display = 'flex';
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
+            iNotFound.style.display = 'none';
 
             MenuOpen = true;
             Menu();
             break
         case 'Register':
-            Menu();
+            iAreaHeader.style.display = 'flex';
             iHomeCont.style.display = 'none';
-            iHomeImg.style.display = 'none';
             iAbout.style.display = 'none';
             iRegister.style.display = 'block';
             iLogin.style.display = 'none';
+            iNotFound.style.display = 'none';
 
             MenuOpen = true;
             Menu();
             break
         case 'Login':
-            Menu();
+            iAreaHeader.style.display = 'flex';
             iHomeCont.style.display = 'none';
-            iHomeImg.style.display = 'none';
             iAbout.style.display = 'none';
             iRegister.style.display = 'none';
             iLogin.style.display = 'block';
+            iNotFound.style.display = 'none';
+
+            MenuOpen = true;
+            Menu();
+            break
+        case 'Not-Found':
+            iAreaHeader.style.display = 'none';
+            iHomeCont.style.display = 'none';
+            iAbout.style.display = 'none';
+            iRegister.style.display = 'none';
+            iLogin.style.display = 'none';
+            iNotFound.style.display = 'block';
+
+            MenuOpen = true;
+            Menu();
+            break
+        default:
+            iAreaHeader.style.display = 'flex';
+            iHomeCont.style.display = 'flex';
+            iAbout.style.display = 'none';
+            iRegister.style.display = 'none';
+            iLogin.style.display = 'none';
+            iNotFound.style.display = 'none';
 
             MenuOpen = true;
             Menu();

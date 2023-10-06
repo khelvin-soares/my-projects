@@ -9,7 +9,7 @@
     <title>Developer Portal</title>
 </head>
 <body>
-    <header>
+    <header id="area-header">
         <div id="logo">
             <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="prev"><img src="images/icon-dev.png" alt="Icon Developer"></a>
             <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="prev">
@@ -27,7 +27,7 @@
             <a href="#about" onclick="Navegation('About')">Sobre</a>
             <a href="#register" onclick="Navegation('Register')">Cadastro</a>
             <a href="#login" href="#register" onclick="Navegation('Login')">Login</a>
-            <a href="">Meu Perfil</a>
+            <a href="#not-found" onclick="Navegation('Not-Found')">Meu Perfil</a>
         </nav>
     </header>
 
@@ -109,11 +109,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" id="button-register">
+                        <a href="#not-found" id="button-register" onclick="Navegation('Not-Found')">
                             <div>Cadastro</div>
-                            <button>Não vai aparecer</button>
                         </a>
                         <p>Já tem uma conta? <a href="#login" onclick="Navegation('Login')">Fazer Login</a></p>
+                        <button>Não vai aparecer</button>
                     </form>
                 </article>
             </div>
@@ -135,14 +135,25 @@
                             <label for="lpassword">Senha</label>
                             <input type="password" name="lpass" id="lpassword" placeholder="Digite sua senha" required>
                         </div>
-                        <a href="" id="button-logar">
+                        <a href="#not-found" id="button-logar" onclick="Navegation('Not-Found')">
                             <div>Entrar</div>
-                            <button>Não vai aparecer</button>
                         </a>
                         <p>Ainda não tem uma contas? <a href="#register" onclick="Navegation('Register')">Fazer Cadastro</a></p>
+                        <button>Não vai aparecer</button>
                     </form>
                 </article>
             </div>
+        </section>
+
+        <section id="not-found">
+            <article>
+                <figure>
+                    <img src="images/404-error.svg" alt="Not Found">
+                </figure>
+                <h1>Serviço indisponível!</h1>
+                <p>Os servidores do Developer Portal foram desativados e alguns serviços podem não estar funcionando!</p>
+                <a href="https://developersweb-portal.vercel.app/">&lsaquo; Voltar</a>
+            </article>
         </section>
     </main>
 
