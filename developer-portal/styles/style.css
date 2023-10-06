@@ -31,6 +31,10 @@
     --font-mod: 'Ethnocentric', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: black;
     background-image: linear-gradient(45deg, var(--Cor3), var(--Cor4));
@@ -61,22 +65,22 @@ header {
 
 #logo > a > img {
     width: 45px;
-}
-
-#logo > a > img, #logo > a > p {
     padding: 10px;
-    transition-duration: 0.5s;
 }
 
 #logo > a > p:hover {
     padding: 15px;
 }
 
+#logo > a > img, #logo > a > p {
+    transition-duration: 0.5s;
+}
+
 #button-menu  > div {
     display: none;
 }
 
-header > nav > p {
+header > nav > a {
     padding: 10px;
     color: white;
     text-align: center;
@@ -86,7 +90,7 @@ header > nav > p {
     transition-duration: 0.5s;
 }
 
-header > nav > p:hover {
+header > nav > a:hover {
     padding: 13px;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -94,32 +98,38 @@ header > nav > p:hover {
 
 main {
     height: 100vh;
+    padding: 25px 15px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-#home-img {
+#home-content > figure {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-#home-img > img {
+#home-content > figure > img {
     max-width: 100%;
 }
 
-#home-conteudo {
+#home-content {
     width: 100%;
     color: white;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
-#home-conteudo > h1 {
+#home-content > article {
+    width: 100%;
+}
+
+#home-content > article > h1 {
     padding: 10px;
     font-size: 2.5em;
     font-style: italic;
@@ -127,21 +137,16 @@ main {
     transition-duration: 0.5s;
 }
 
-#home-conteudo > article > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: end;
-}
-
-#home-conteudo > article > p {
+#home-content > article > p {
     padding: 10px;
     font-size: 1.1em;
 }
 
-#button-login, #button-cadastro {
-    width: 170px;
-    transition-duration: 0.5s;
+#home-content > article > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
 }
 
 #button-login {
@@ -156,6 +161,11 @@ main {
     border-radius: 7px;
     background-color: transparent;
     border: 1px solid white;
+}
+
+#button-login, #button-cadastro {
+    width: 170px;
+    transition-duration: 0.5s;
 }
 
 #button-login:hover, #button-cadastro:hover {
@@ -181,24 +191,28 @@ main {
     font-weight: bolder;
 }
 
+#about {
+    display: none;
+}
+
 @media (max-width: 849px) {
-    main {
-        padding: 35px 0px;
-        display: flex;
+    #home-content {
         flex-direction: column;
-        justify-content: center;
         gap: 25px;
     }
 
-    #home-conteudo > h1 {
-        font-size: 2.4em;
-    }
-
-    #home-conteudo {
+    #home-content > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
-    #home-conteudo > article > div {
+    #home-content > article > h1 {
+        font-size: 2.4em;
+    }
+
+    #home-content > article > div {
         justify-content: center;
     }
 }
@@ -228,7 +242,18 @@ main {
     }
 
     header > nav {
-        background-color: white;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+
+        width: 200px;
+        top: 100%;
+        right: 0%;
+        height: 100vh;
+        font-size: 16px;
+        border-radius: 0px 0px 0px 7px;
+        box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.282);
+        background-color: rgb(223, 198, 251);
     }
 
     #logo > a {
@@ -259,33 +284,18 @@ main {
         font-size: 14px;
     }
 
-    header > nav {
-        position: absolute;
-        display: none;
-        flex-direction: column;
-
-        width: 200px;
-        top: 100%;
-        right: 0%;
-        height: 100vh;
-        font-size: 16px;
-        border-radius: 0px 0px 0px 7px;
-        box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.282);
-        background-color: rgb(223, 198, 251);
-    }
-
     header > nav > p {
         color: black;
         font-size: 16px;
     }
 
-    #home-conteudo > h1 {
+    #home-content > article > h1 {
         font-size: 2.2em;
         transition-duration: 0.5s;
     }
 
     #button-login, #button-cadastro {
-        width: 140px;
+        width: 135px;
         transition-duration: 0.5s;
     }
 }

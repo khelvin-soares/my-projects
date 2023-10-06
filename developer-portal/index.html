@@ -23,18 +23,18 @@
             </div>
         </div>
         <nav id="menu">
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Cadastro</p>
-            <p>Login</p>
-            <p>Meu Perfil</p>
+            <a href="#home-content" onclick="Navegation('Home')">Home</a>
+            <a href="#about" onclick="Navegation('About')">Sobre</a>
+            <a href="">Cadastro</a>
+            <a href="">Login</a>
+            <a href="">Meu Perfil</a>
         </nav>
     </header>
 
     <main>
-        <section id="home-conteudo">
-            <h1>Developer Portal</h1>
+        <section id="home-content">
             <article>
+                <h1>Developer Portal</h1>
                 <p>Olá, desenvolvedor(a), seja bem vindo(a) ao Developer Portal!</p>
                 <div>
                     <div id="button-login">
@@ -45,9 +45,19 @@
                     </div>
                 </div>
             </article>
+            <figure id="home-img">
+                <img src="images/developer-home.svg" alt="Página principal">
+            </figure>
         </section>
-        <section id="home-img">
-            <img src="images/home-dev.png" alt="Página principal">
+
+        <section id="about">
+            <article>
+                <h1>Sobre o Developer Portal</h1>
+                <p>O Developer Portal é um site de registro de desenvolvedores que após o registro, permite que os desenvolvedores se comuniquem uns com os outros para que possam ajudar e pedir ajuda a outros desenvolvedores.</p>
+            </article>
+            <figure>
+                <img src="images/icon-about.svg" alt="Página Sobre">
+            </figure>
         </section>
     </main>
 
