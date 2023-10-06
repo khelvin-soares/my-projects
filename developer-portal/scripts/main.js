@@ -23,9 +23,6 @@ function Navegation(GoTo) {
     const iRegister = window.document.querySelector('#register');
     const iLogin = window.document.querySelector('#login');
 
-    MenuOpen = true;
-    Menu();
-
     switch(GoTo) {
         case 'Home':
             Menu();
@@ -34,6 +31,9 @@ function Navegation(GoTo) {
             iAbout.style.display = 'none';
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
+
+            MenuOpen = true;
+            Menu();
             break
         case 'About':
             Menu();
@@ -42,6 +42,9 @@ function Navegation(GoTo) {
             iAbout.style.display = 'flex';
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
+
+            MenuOpen = true;
+            Menu();
             break
         case 'Register':
             Menu();
@@ -50,6 +53,9 @@ function Navegation(GoTo) {
             iAbout.style.display = 'none';
             iRegister.style.display = 'block';
             iLogin.style.display = 'none';
+
+            MenuOpen = true;
+            Menu();
             break
         case 'Login':
             Menu();
@@ -58,6 +64,9 @@ function Navegation(GoTo) {
             iAbout.style.display = 'none';
             iRegister.style.display = 'none';
             iLogin.style.display = 'block';
+
+            MenuOpen = true;
+            Menu();
             break
     }
 }
