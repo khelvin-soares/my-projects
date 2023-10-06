@@ -1,4 +1,4 @@
-var MenuOpen = false;
+var MenuOpen = true;
 
 const ButtonMenu = window.document.querySelector('#button-menu');
 const ShowMenu = window.document.querySelector('#menu');

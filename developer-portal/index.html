@@ -40,7 +40,7 @@
                     <div id="button-login">
                         <p>Login</p>
                     </div>
-                    <div id="button-cadastro">
+                    <div id="button-cadastro" onclick="Navegation('Register')">
                         <p>Cadastro</p>
                     </div>
                 </div>
@@ -71,31 +71,31 @@
                         <div id="user-name" class="style-form">
                             <div>
                                 <label for="inome">Nome</label>
-                                <input type="text" name="nome" id="inome" placeholder="Digite o seu nome" required>
+                                <input type="text" name="nome" id="inome" placeholder="Digite o seu nome" required minlength="2">
                             </div>
                             <div>
                                 <label for="isobrenome">Sobrenome</label>
-                                <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite o seu sobrenome" required>
+                                <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite o seu sobrenome" required minlength="2">
                             </div>
                         </div>
                         <div id="user-contact" class="style-form">
                             <div>
                                 <label for="iemail">E-mail</label>
-                                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required>
+                                <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" required minlength="1">
                             </div>
                             <div>
                                 <label for="itelephone">Telefone</label>
-                                <input type="tel" name="telephone" id="itelephone" placeholder="(xx) xxxxx-xxxx" required>
+                                <input type="tel" name="telephone" id="itelephone" placeholder="(xx) xxxxx-xxxx" required minlength="10">
                             </div>
                         </div>
                         <div id="user-password" class="style-form">
                             <div>
                                 <label for="ipass">Senha</label>
-                                <input type="password" name="pass" id="ipass" placeholder="Digite uma senha" required>
+                                <input type="password" name="pass" id="ipass" placeholder="Digite uma senha" required minlength="6">
                             </div>
                             <div>
                                 <label for="cpass">Confirme sua senha</label>
-                                <input type="password" name="pass" id="cpass" placeholder="Digite sua senha novamente" required>
+                                <input type="password" name="pass" id="cpass" placeholder="Digite sua senha novamente" required minlength="6">
                             </div>
                         </div>
                         <div id="user-gender">
@@ -109,7 +109,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button>Cadastrar</button>
+                        <a href="" id="button-register">
+                            <div>Cadastro</div>
+                            <button>Não vai aparecer</button>
+                        </a>
                         <p>Já tem uma conta? <a href="">Fazer Login</a></p>
                     </form>
                 </article>
