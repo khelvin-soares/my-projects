@@ -16,31 +16,15 @@ function Menu() {
     }
 }
 
-var V = true;
-setInterval(() => {
-    var GetWidth = window.innerWidth;
-    
-    if (V == false && GetWidth > 599) {
-        V = true
-        IconMenu.innerHTML = 'close';
-        ShowMenu.style.display = 'flex';
-    } else {
-        if (V == true && GetWidth < 600) {
-            V = false
-            IconMenu.innerHTML = 'menu';
-            ShowMenu.style.display = 'none';
-        } else {
-            V=false;
-        }
-    }
-}, 200);
-
 function Navegation(GoTo) {
     const iHomeCont = window.document.querySelector('#home-content');
     const iHomeImg = window.document.querySelector('#home-img');
     const iAbout = window.document.querySelector('#about');
     const iRegister = window.document.querySelector('#register');
     const iLogin = window.document.querySelector('#login');
+
+    MenuOpen = true;
+    Menu();
 
     switch(GoTo) {
         case 'Home':
@@ -77,5 +61,22 @@ function Navegation(GoTo) {
             break
     }
 }
+
+var V;
+setInterval(() => {
+    var GetWidth = window.innerWidth;
+
+    if ( GetWidth > 599) {
+        V=true;
+        IconMenu.innerHTML = 'close';
+        ShowMenu.style.display = 'flex';
+    } else {
+        if (V==true) {
+            V=false;
+            IconMenu.innerHTML = 'menu';
+            ShowMenu.style.display = 'none';
+        } 
+    }
+}, 200);
 
 ButtonMenu.addEventListener('click', Menu);
