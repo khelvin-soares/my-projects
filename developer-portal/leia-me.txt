@@ -1,0 +1,1 @@
+Como os servidores do Developer Portal foram desativados, peguei uma parte do site e fiz algumas adaptações para transformá-lo em um projeto! Então apenas a parte visual (Front-End) está funcionando, a parte de servidores (Back-End) não está funcionando.

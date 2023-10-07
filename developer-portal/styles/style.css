@@ -327,10 +327,6 @@ main {
 
 #button-register {
     width: 100%;
-    text-decoration: none;
-}
-
-#button-register > div {
     padding: 7px;
     border: none;
     color: white;
@@ -342,12 +338,8 @@ main {
     background-color: var(--Cor3);
 }
 
-#button-register > div:hover {
+#button-register:hover {
     cursor: pointer;
-}
-
-button {
-    display: none;
 }
 
 #register > div > article > form > p {
@@ -399,10 +391,6 @@ button {
 
 #button-logar {
     width: 100%;
-    text-decoration: none;
-}
-
-#button-logar > div {
     padding: 7px;
     border: none;
     color: white;
@@ -414,7 +402,7 @@ button {
     background-color: var(--Cor3);
 }
 
-#button-logar > div:hover {
+#button-logar:hover {
     cursor: pointer;
 }
 
