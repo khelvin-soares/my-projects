@@ -1,22 +1,8 @@
-var MenuOpen = false;
-
 const ButtonMenu = window.document.querySelector('#button-menu');
 const ShowMenu = window.document.querySelector('#menu');
 const IconMenu = window.document.querySelector('.material-icons');
 const iHeader = window.document.querySelector('#area-header');
 const iMain = window.document.querySelector('#area-main');
-
-function Menu() {
-    if (MenuOpen == false) {
-        MenuOpen = true;
-        IconMenu.innerHTML = 'close';
-        ShowMenu.style.display = 'flex';
-    } else {
-        MenuOpen = false;
-        IconMenu.innerHTML = 'menu';
-        ShowMenu.style.display = 'none';
-    }
-}
 
 function Navegation(GoTo) {
     const iAreaHeader = window.document.querySelector('#area-header');
@@ -35,9 +21,6 @@ function Navegation(GoTo) {
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
             iNotFound.style.display = 'none';
-
-            MenuOpen = true;
-            Menu();
             break
         case 'About':
             iAreaHeader.style.display = 'flex';
@@ -46,9 +29,6 @@ function Navegation(GoTo) {
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
             iNotFound.style.display = 'none';
-
-            MenuOpen = true;
-            Menu();
             break
         case 'Register':
             iAreaHeader.style.display = 'flex';
@@ -57,9 +37,6 @@ function Navegation(GoTo) {
             iRegister.style.display = 'block';
             iLogin.style.display = 'none';
             iNotFound.style.display = 'none';
-
-            MenuOpen = true;
-            Menu();
             break
         case 'Login':
             iAreaHeader.style.display = 'flex';
@@ -68,9 +45,6 @@ function Navegation(GoTo) {
             iRegister.style.display = 'none';
             iLogin.style.display = 'block';
             iNotFound.style.display = 'none';
-
-            MenuOpen = true;
-            Menu();
             break
         case 'Not-Found':
             iAreaHeader.style.display = 'none';
@@ -79,9 +53,6 @@ function Navegation(GoTo) {
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
             iNotFound.style.display = 'block';
-
-            MenuOpen = true;
-            Menu();
             break
         default:
             iAreaHeader.style.display = 'flex';
@@ -93,9 +64,6 @@ function Navegation(GoTo) {
             iError.style.display = 'none';
             iHeader.style.filter = 'blur(0px)';
             iMain.style.filter = 'blur(0px)';
-
-            MenuOpen = true;
-            Menu();
             break
     }
 }
@@ -105,22 +73,4 @@ function Attention() {
     iMain.style.filter = 'blur(5px)';
 }
 
-var V;
-setInterval(() => {
-    var GetWidth = window.innerWidth;
-
-    if ( GetWidth > 599) {
-        V=true;
-        IconMenu.innerHTML = 'close';
-        ShowMenu.style.display = 'flex';
-    } else {
-        if (V==true) {
-            V=false;
-            IconMenu.innerHTML = 'menu';
-            ShowMenu.style.display = 'none';
-        } 
-    }
-}, 200);
-
-ButtonMenu.addEventListener('click', Menu);
 window.addEventListener('load', Attention);
