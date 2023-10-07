@@ -1,1 +1,0 @@
-Os servidores do Developer Portal foram desativados e alguns serviços podem não estar funcionando!
