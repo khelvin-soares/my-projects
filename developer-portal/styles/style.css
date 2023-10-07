@@ -79,10 +79,6 @@ header {
     transition-duration: 0.5s;
 }
 
-#button-menu  > div {
-    display: none;
-}
-
 header > nav > a {
     padding: 10px;
     color: white;
@@ -94,8 +90,9 @@ header > nav > a {
 }
 
 header > nav > a:hover {
-    padding: 13px;
+    padding: 5px;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.463);
     transition-duration: 0.5s;
 }
 
@@ -586,22 +583,8 @@ main {
 
 @media (max-width: 599px) {
     header {
-        position: relative;
-    }
-
-    header > nav {
-        display: none;
+        height: 100px;
         flex-direction: column;
-        position: absolute;
-
-        width: 200px;
-        top: 100%;
-        right: 0%;
-        height: 100vh;
-        font-size: 16px;
-        border-radius: 0px 0px 0px 7px;
-        box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.282);
-        background-color: rgb(223, 198, 251);
     }
 
     #logo > a {
@@ -611,25 +594,6 @@ main {
     #logo > a > p {
         font-size: 14px;
         transition-duration: 0.5s;
-    }
-
-    #button-menu {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        font-weight: bolder;
-    }
-
-    #button-menu  > div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-    
-        padding: 10px;
-        font-size: 14px;
     }
 
     header > nav > p {
@@ -684,5 +648,11 @@ main {
         padding: 25px;
         font-size: 1.5em;
         transition-duration: 0.5s;
+    }
+}
+
+@media (max-width: 350px) {
+    header > nav > a {
+        font-size: 11.5px;
     }
 }
