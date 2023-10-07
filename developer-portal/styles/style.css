@@ -39,6 +39,7 @@ html {
 
 body {
     color: black;
+    position: relative;
     background-image: linear-gradient(45deg, var(--Cor3), var(--Cor4));
     font-family: var(--font-padrao);
 }
@@ -523,6 +524,45 @@ main {
     #about > figure > img{
         max-width: 400px;
     }
+}
+
+#error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+    width: 305px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.678);
+    background-color: rgb(33, 33, 33);
+}
+
+#error > figure {
+    width: 50px;
+    margin: auto;
+}
+
+#error > figure > img {
+    width: 100%;
+}
+
+#error > p {
+    padding: 25px 0px;
+}
+
+#error > div > p {
+    width: 50px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.504);
+}
+
+#error > div > p:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 650px) {

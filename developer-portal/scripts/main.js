@@ -3,6 +3,8 @@ var MenuOpen = false;
 const ButtonMenu = window.document.querySelector('#button-menu');
 const ShowMenu = window.document.querySelector('#menu');
 const IconMenu = window.document.querySelector('.material-icons');
+const iHeader = window.document.querySelector('#area-header');
+const iMain = window.document.querySelector('#area-main');
 
 function Menu() {
     if (MenuOpen == false) {
@@ -23,6 +25,7 @@ function Navegation(GoTo) {
     const iRegister = window.document.querySelector('#register');
     const iLogin = window.document.querySelector('#login');
     const iNotFound = window.document.querySelector('#not-found');
+    const iError = window.document.querySelector('#error');
 
     switch(GoTo) {
         case 'Home':
@@ -87,11 +90,19 @@ function Navegation(GoTo) {
             iRegister.style.display = 'none';
             iLogin.style.display = 'none';
             iNotFound.style.display = 'none';
+            iError.style.display = 'none';
+            iHeader.style.filter = 'blur(0px)';
+            iMain.style.filter = 'blur(0px)';
 
             MenuOpen = true;
             Menu();
             break
     }
+}
+
+function Attention() {
+    iHeader.style.filter = 'blur(5px)';
+    iMain.style.filter = 'blur(5px)';
 }
 
 var V;
@@ -112,3 +123,4 @@ setInterval(() => {
 }, 200);
 
 ButtonMenu.addEventListener('click', Menu);
+window.addEventListener('load', Attention);
