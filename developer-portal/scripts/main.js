@@ -1,10 +1,7 @@
-const ButtonMenu = window.document.querySelector('#button-menu');
-const ShowMenu = window.document.querySelector('#menu');
-const IconMenu = window.document.querySelector('.material-icons');
 const iHeader = window.document.querySelector('#area-header');
 const iMain = window.document.querySelector('#area-main');
 
-function Navegation(GoTo) {
+function Navegation(GoTo='null') {
     const iAreaHeader = window.document.querySelector('#area-header');
     const iHomeCont = window.document.querySelector('#home-content');
     const iAbout = window.document.querySelector('#about');
@@ -14,6 +11,17 @@ function Navegation(GoTo) {
     const iError = window.document.querySelector('#error');
 
     switch(GoTo) {
+        case 'null':
+            iAreaHeader.style.display = 'flex';
+            iHomeCont.style.display = 'flex';
+            iAbout.style.display = 'none';
+            iRegister.style.display = 'none';
+            iLogin.style.display = 'none';
+            iNotFound.style.display = 'none';
+            iError.style.display = 'none';
+            iHeader.style.filter = 'blur(0px)';
+            iMain.style.filter = 'blur(0px)';
+            break
         case 'Home':
             iAreaHeader.style.display = 'flex';
             iHomeCont.style.display = 'flex';
