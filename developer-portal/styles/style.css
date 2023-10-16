@@ -274,6 +274,7 @@ footer {
 
     #about {
         flex-direction: column;
+        align-items: center;
     }
 
     #benefits {
@@ -282,5 +283,6 @@ footer {
 
     #more {
         flex-direction: column;
+        align-items: center;
     }
 }
