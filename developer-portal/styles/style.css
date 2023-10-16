@@ -222,14 +222,13 @@ footer {
 
 #more > div {
     width: 80%;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
 #more > div > p {
     color: #6c63ff;
-    padding: 15px 0px;
 }
 
 #more > div > a {
