@@ -8,11 +8,19 @@
     <title>Developer Portal</title>
 </head>
 <body>
-    <main>
+    <div id="msg-alert">
+        <figure>
+            <img src="images/error.png" alt="Mensagem de erro">
+        </figure>
+        <p style="color: white;">Os servidores do Developer Portal estão desativados, e alguns serviços podem não funcionar!</p>
+        <p style="color: rgb(130, 130, 130); font-weight: bolder; cursor: pointer;" onclick="MsgAlert()">Fechar</p>
+    </div>
+
+    <main id="area-content">
         <section id="home">
             <article>
                 <h1>Developer Portal</h1>
-                <p>Olá desenvolvedor, seja bem-vindo ao Developer Portal! Imagine um lugar onde você pode tirar dúvidas, conversar, ajudar e pedir ajuda a outros desenvolvedores em seus projetos... Isso mesmo, o Developer Portal oferece isso e muito mais!</p>
+                <p>Olá desenvolvedor(a), seja bem-vindo(a) ao Developer Portal! Imagine um lugar onde você pode tirar dúvidas, conversar, ajudar e pedir ajuda a outros desenvolvedores em seus projetos... Isso mesmo, o Developer Portal oferece isso e muito mais!</p>
             </article>
         </section>
 
@@ -31,7 +39,7 @@
                 <img src="images/canais.svg" alt="Developer Portal">
             </figure>
             <article>
-                <h1>Entre em canal onde você se sinta em casa</h1>
+                <h1>Entre em um canal onde você se sinta em casa</h1>
                 <p>Os servidores do Developer Portal são organizados em canais com tópicos para vocês colaborarem, compartilharem projetos e cursos ou simplesmente para conversar uns com os outros.</p>
             </article>
         </section>
@@ -50,7 +58,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="area-footer">
         <div id="more">
             <div>
                 <p>Conta</p>
@@ -82,5 +90,7 @@
             <p>Developer Portal</p>
         </a>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
