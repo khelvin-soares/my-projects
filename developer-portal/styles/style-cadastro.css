@@ -73,7 +73,6 @@ main {
 
 #container > div {
     padding: 15px;
-    min-width: 450px;
     background-color: white;
 }
 
@@ -102,6 +101,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 #container > div > form > article > section {
@@ -182,8 +182,6 @@ input:hover {
     text-decoration: underline;
 }
 
-
-
 footer {
     padding: 10px;
     color: white;
@@ -248,9 +246,35 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 499px) {
+    #container {
+        width: 100%;
+    }
+    
+    #container > div {
+        width: 100%;
+    }
+
+    #container > div > form > article {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) {
+    #container > div {
+        min-width: 450px;
+    }
+}
+
 @media (max-width: 599px) {
     #more {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 949px) {
+    #container > figure {
+        display: none;
     }
 }
