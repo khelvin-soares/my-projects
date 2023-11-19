@@ -82,6 +82,10 @@ section {
 
 
 #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,6 +221,78 @@ td, th {
     border: 1px solid black;
 }
 
+#container > p {
+    padding: 25px 10px;
+    color: black;
+    text-align: center;
+}
+
+#container > p > strong {
+    color: red;
+}
+
+
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#info > figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid #ffd400;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.368);
+}
+
+#info > figure > img {
+    width: 90%;
+}
+
+#info > article > h1 {
+    width: 170px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #ffda23;
+}
+
+#info > article > p {
+    padding: 12px;
+}
+
+#info > article > p > a {
+    color: #00a1ff;
+    text-decoration: none;
+}
+
+#info > article > p > a:hover {
+    text-decoration: underline;
+}
+
+
+
+#alliances {
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
 footer {
     padding: 10px;
     color: white;
@@ -301,7 +377,6 @@ footer > div {
 
 
 
-
 @media (max-width: 599px) {
     #about {
         max-width: 700px;
@@ -382,6 +457,10 @@ footer > div {
 
     #reason > figure {
         width: 75%;
+    }
+
+    #info {
+        flex-direction: row;
     }
 }
 
