@@ -9,6 +9,10 @@
     --font-padrao: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-padrao);
 }
@@ -82,6 +86,7 @@ header > nav > a:hover {
 
 section {
     min-height: 100vh;
+    padding: 20px;
 }
 
 
@@ -90,7 +95,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -158,7 +162,6 @@ main > div {
     gap: 20px;
 
     margin: auto;
-    padding: 15px 0px;
     text-align: justify;
 }
 
@@ -182,7 +185,6 @@ main > div {
 
 #price {
     margin: auto;
-    padding: 15px 0px;
     text-align: justify;
 }
 
@@ -243,7 +245,6 @@ td, th {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 10px;
 }
 
 #info > figure {
@@ -288,11 +289,71 @@ td, th {
 }
 
 
-
 #alliances {
-    padding: 10px;
     font-size: 2em;
     text-align: center;
+}
+
+#alliances > article > h1 {
+    padding: 15px;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+#contact > h1 {
+    padding: 10px 10px 25px 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#contact > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+    font-size: 14px;
+}
+
+#contact > article > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+}
+
+#contact > article > div > h2 {
+    padding: 5px;
+    font-size: 1.3em;
+}
+#contact > article > div > p {
+    padding: 5px;
+}
+
+#contact > article > div > p > a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+#contact > article > div > figure {
+    width: 40px;
+    padding: 5px;
+}
+
+#contact > article > div > figure > img {
+    width: 100%;
 }
 
 
@@ -462,8 +523,21 @@ footer > div {
         transition-duration: 0.5s;
         background-color: #ffec8d;
     }
+
     #button-menu {
         display: none;
+    }
+
+    #contact > article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+        
+        max-width: 800px;
+        height: 100%;
+        margin: auto;
+        font-size: 14px;
     }
 }
 
