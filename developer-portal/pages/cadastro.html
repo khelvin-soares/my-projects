@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/icon-code.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style-cadastro.css">
+    <title>Developer Portal - Cadastro</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <figure>
+                <img src="../images/register.svg" alt="Register DV">
+            </figure>
+            <div>
+                <h1>Cadastre-se</h1>
+                <form action="#" method="post">
+                    <article>
+                        <section>
+                            <label for="inome">Nome</label>
+                            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" minlength="2" required>
+                        </section>
+                        <section>
+                            <label for="isobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" minlength="2" required>
+                        </section>
+                    </article>
+                    <article>
+                        <section>
+                            <label for="iemail">E-mail</label>
+                            <input type="email" name="email" id="iemail" placeholder="Digite seu E-mail" required>
+                        </section>
+                        <section>
+                            <label for="itel">Telefone</label>
+                            <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx" pattern="^\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" required>
+                        </section>
+                    </article>
+                    <article>
+                        <section>
+                            <label for="ipassword">Senha</label>
+                            <input type="password" name="password" id="ipassword" placeholder="Digite uma senha" minlength="6" required>
+                        </section>
+                        <section>
+                            <label for="pass">Confirme sua senha</label>
+                            <input type="password" name="pass" id="ipass" placeholder="Digite a senha novamente" minlength="6" required>
+                        </section>
+                    </article>
+                    <p id="p-genero">Gênero</p>
+                    <article class="bloco-genero">
+                        <section class="area-genero">
+                            <input type="radio" name="genero" id="imas" checked>
+                            <label for="imas">Masculino</label>
+                        </section>
+                        <section class="area-genero">
+                            <input type="radio" name="genero" id="ifem">
+                            <label for="ifem">Feminino</label>
+                        </section>
+                    </article>
+                    <article id="enviar">
+                        <input type="submit" value="Cadastrar">
+                        <p>Já possui uma conta? <a href="login.html" target="_self" rel="next">Fazer login</a></p>
+                    </article>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="more">
+            <div>
+                <p>Conta</p>
+                <a href="../pages/not-found.html">Sua Conta</a>
+                <a href="login.html" target="_self" rel="next">Login</a>
+                <a href="cadastro.html" target="_self" rel="next">Cadastro</a>
+                <a href="../pages/not-found.html">Segurança</a>
+            </div>
+            <div>
+                <p>Recursos</p>
+                <a href="../pages/not-found.html">Sobre</a>
+                <a href="../pages/not-found.html">Suporte</a>
+                <a href="../pages/not-found.html">Relatar um problema</a>
+                <a href="../pages/not-found.html">Centro de Ajuda</a>
+            </div>
+            <div>
+                <p>Política</p>
+                <a href="../pages/not-found.html">Termos</a>
+                <a href="../pages/not-found.html">Privacidade</a>
+                <a href="../pages/not-found.html">Diretrizes</a>
+                <a href="../pages/not-found.html">Licenças</a>
+                <a href="../pages/not-found.html">Reconhecimentos</a>
+            </div>
+        </div>
+        <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="external" id="logo">
+            <figure>
+                <img src="../images/icon-dev.png" alt="Developer Portal">
+            </figure>
+            <p>Developer Portal</p>
+        </a>
+    </footer>
+</body>
+</html>

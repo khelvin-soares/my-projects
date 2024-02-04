@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../fonts/ethnocentric.otf') format('opentype');
+}
+
+/*
+    - PALETA DE CORES
+
+    Cor 1 - #32D8FF
+    Cor 2 - #5BC6FF
+    Cor 3 - #96ADFF
+    Cor 4 - #C698FF
+    Cor 5 - #FE80FF
+
+    #FDE3A7D7
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --Cor1: #32D8FF;
+    --Cor2: #5BC6FF;
+    --Cor3: #96ADFF;
+    --Cor4: #C698FF;
+    --Cor5: #FE80FF;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-mod: 'Ethnocentric', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, var(--Cor3), var(--Cor4));
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.211);
+}
+
+#container > figure {
+    width: 400px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#container > figure > img {
+    width: 100%;
+}
+
+#container > div {
+    padding: 15px;
+    background-color: white;
+}
+
+#container > div > h1 {
+    font-size: 1.5em;
+}
+
+#container > div > h1:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3.5px;
+    background-color: var(--Cor3);
+    margin: 0px auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#container > div > form {
+    margin-top: 15px;
+}
+
+#container > div > form > article {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#container > div > form > article > section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.3px solid #96adff4d;
+    box-shadow: 0px 0px 3px #96adff4d;
+    transition-duration: 0.5s;
+}
+
+input:hover {
+    cursor: pointer;
+    background-color: #cccccc15;
+    transition-duration: 0.5s;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#container #enviar {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
+
+#container #enviar > input {
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--Cor3);
+}
+
+#container #enviar > p {
+    font-size: 12px;
+}
+
+#container #enviar > p > a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+#container #enviar > p > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+#more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: auto;
+    max-width: 800px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#more > div {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#more > div > p {
+    color: #6c63ff;
+}
+
+#more > div > a {
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+#more > div > a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 14px;
+    width: 300px;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+
+#logo > p {
+    font-family: var(--font-mod);
+}
+
+#logo > figure {
+    width: 35px;
+}
+
+#logo > figure > img {
+    width: 100%;
+}
+
+@media (max-width: 499px) {
+    #container {
+        width: 100%;
+    }
+    
+    #container > div {
+        width: 100%;
+    }
+
+    #container > div > form > article {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) {
+    #container > div {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 599px) {
+    #more {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 949px) {
+    #container > figure {
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        display: none;
+    }
+}

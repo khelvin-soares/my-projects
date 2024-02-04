@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/icon-code.ico" type="image/x-icon">
+    <title>Developer Portal</title>
+</head>
+<body>
+    <div id="msg-alert">
+        <figure>
+            <img src="images/error.png" alt="Mensagem de erro">
+        </figure>
+        <p style="color: white;">Os servidores do Developer Portal estão desativados, e alguns serviços podem não funcionar!</p>
+        <p style="color: rgb(130, 130, 130); font-weight: bolder; cursor: pointer;" onclick="MsgAlert()">Fechar</p>
+    </div>
+
+    <main id="area-content">
+        <section id="home">
+            <article>
+                <h1>Developer Portal</h1>
+                <p>Olá desenvolvedor(a), seja bem-vindo(a) ao Developer Portal! Imagine um lugar onde você pode tirar dúvidas, conversar, ajudar e pedir ajuda a outros desenvolvedores em seus projetos... Isso mesmo, o Developer Portal oferece isso e muito mais!</p>
+            </article>
+        </section>
+
+        <section id="about">
+            <article>
+                <h1>Sobre o Developer Portal</h1>
+                <p>O Developer Portal é um site de registro de desenvolvedores que, após o registro, permite que os desenvolvedores se comuniquem entre si para que possam ajudar e pedir ajuda a outros desenvolvedores. Você também pode compartilhar conhecimentos, dicas, obter ajuda para solução de problemas e muito mais! Junte-se ao Developer Portal e torne-se parte da nossa comunidade.</p>
+            </article>
+            <figure>
+                <img src="images/about.svg" alt="Sobre o Developer Portal">
+            </figure>
+        </section>
+
+        <section id="benefits">
+            <figure>
+                <img src="images/canais.svg" alt="Developer Portal">
+            </figure>
+            <article>
+                <h1>Entre em um canal onde você se sinta em casa</h1>
+                <p>Os servidores do Developer Portal são organizados em canais com tópicos para vocês colaborarem, compartilharem projetos e cursos ou simplesmente para conversar uns com os outros.</p>
+            </article>
+        </section>
+
+        <section id="join">
+            <article>
+                <h1>Junte-se a nossa comunidade</h1>
+                <div>
+                    <a href="pages/login.html" target="_self" rel="next" style="color: black; background-color: rgb(234, 234, 234);">Login</a>
+                    <a href="pages/cadastro.html" target="_self" rel="next" style="color: white; background-color: rgb(15, 15, 15);">Cadastro</a>
+                </div>
+            </article>
+            <figure>
+                <img src="images/stars.svg" alt="Developer Portal">
+            </figure>
+        </section>
+    </main>
+
+    <footer id="area-footer">
+        <div id="more">
+            <div>
+                <p>Conta</p>
+                <a href="pages/not-found.html">Sua Conta</a>
+                <a href="pages/login.html" target="_self" rel="next">Login</a>
+                <a href="pages/cadastro.html" target="_self" rel="next">Cadastro</a>
+                <a href="pages/not-found.html">Segurança</a>
+            </div>
+            <div>
+                <p>Recursos</p>
+                <a href="pages/not-found.html">Sobre</a>
+                <a href="pages/not-found.html">Suporte</a>
+                <a href="pages/not-found.html">Relatar um problema</a>
+                <a href="pages/not-found.html">Centro de Ajuda</a>
+            </div>
+            <div>
+                <p>Política</p>
+                <a href="pages/not-found.html">Termos</a>
+                <a href="pages/not-found.html">Privacidade</a>
+                <a href="pages/not-found.html">Diretrizes</a>
+                <a href="pages/not-found.html">Licenças</a>
+                <a href="pages/not-found.html">Reconhecimentos</a>
+            </div>
+        </div>
+        <a href="https://developersweb-portal.vercel.app/" target="_blank" rel="external" id="logo">
+            <figure>
+                <img src="images/icon-dev.png" alt="Developer Portal">
+            </figure>
+            <p>Developer Portal</p>
+        </a>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
