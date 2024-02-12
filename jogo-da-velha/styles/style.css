@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px 0px 0px;
+}
+
+body > div {
+    display: none;
+}
+
+header {
+    padding: 10px;
+}
+
+header > h1 {
+    text-shadow: 0.5px 0.5px 3px black;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+header > h1, header > p {
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main > p {
+    display: none;
+    padding: 10px;
+    color: red;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    margin: auto;
+    width: 145px;
+    height: 120px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bordas-left-bottom {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.bordas-bottom {
+    border-bottom: 3px solid black;
+}
+
+.bordas-right {
+    border-right: 3px solid black;
+}
+
+figure {
+    width: 70%;
+    height: 70%;
+    margin: 30px;
+}
+
+.porX {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/x.png");
+}
+
+.porO {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/O.png");
+}
+
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid red;
+    transform: translate(-50%, -50%);
+    background-color: rgb(30, 30, 30);
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+
+#container > h1 {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#container > p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+}
+
+footer > p {
+    color: white;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: rgb(211, 243, 255);
+    font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    header, main, footer {
+        display: none;
+    }
+    
+    body > div {
+        display: block;
+    }
+}

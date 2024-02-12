@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+        <p>Olá jogadores! Sejam bem vindos ao jogo da velha.</p>
+    </header>
+    <main>
+        <p style="display: block; color: black;">Vez do jogador <span id="vezplayer" style="color: brown;">Player 1</span></p>
+        <section>
+            <div onclick="Jogar(1)" class="bordas-left-bottom">
+                <figure id="area-1"><!-- 1 --></figure>
+            </div>
+            <div onclick="Jogar(2)" class="bordas-left-bottom">
+                <figure id="area-2"><!-- 2 --></figure>
+            </div>
+            <div onclick="Jogar(3)" class="bordas-bottom">
+                <figure id="area-3"><!-- 3 --></figure>
+            </div>
+        </section>
+        <section>
+            <div onclick="Jogar(4)" class="bordas-left-bottom">
+                <figure id="area-4"><!-- 4 --></figure>
+            </div>
+            <div onclick="Jogar(5)" class="bordas-left-bottom">
+                <figure id="area-5"><!-- 5 --></figure>
+            </div>
+            <div onclick="Jogar(6)" class="bordas-bottom">
+                <figure id="area-6"><!-- 6 --></figure>
+            </div>
+        </section>
+        <section>
+            <div onclick="Jogar(7)" class="bordas-right">
+                <figure id="area-7"><!-- 7 --></figure>
+            </div>
+            <div onclick="Jogar(8)" class="bordas-right">
+                <figure id="area-8"><!-- 8 --></figure>
+            </div>
+            <div onclick="Jogar(9)">
+                <figure id="area-9"><!-- 9 --></figure>
+            </div>
+        </section>
+        <p id="bloqueado">Ops! Seu adversário já jogou neste lugar, escolha outro lugar para jogar. :D</p>
+
+        <section id="container">
+            <h1>Fim da partida!</h1>
+            <p id="vencedor">Verificando...</p>
+            <p onclick="refresh()" style="background-color: red; border-radius: 7px; cursor: pointer;">Fechar</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/khelvin-soares" target="_blank" rel="author">&copy; Kelvin Soares</a></p>
+    </footer>
+
+    <div><p>Sinto muito, mas nosso site não é compativel com seu dispositivo...</p></div>
+
+    <script src="scripts/main.js">
+        // Script
+    </script>
+</body>
+</html>
